@@ -1,0 +1,72 @@
+//Local Host: 
+### All
+GET http://localhost:8080/contacts
+
+###GET
+GET http://localhost:8080/contacts/63cbb002a8c8ee2727aa2c16
+
+###GET
+GET http://localhost:8080/contacts/63f8d0193f6c6771fb5131b7
+
+###GET
+GET http://localhost:8080/contacts/63f8d1973f6c6771fb5131b8
+
+###GET
+GET http://localhost:8080/contacts/63f8d3313f6c6771fb5131b9
+ 
+###
+POST
+POST http://localhost:8080/contacts 
+Content-Type: application/json
+
+{"firstName": "Koffi",
+"lastName": "Odilor",
+"email": "somorvi@test.com",
+"favoriteColor": "white",
+"birthday": "01/12/1985"}
+
+###PUT
+PUT http://localhost:8080/contacts/63f8d0193f6c6771fb5131b7
+Content-Type: application/json
+ 
+
+{"firstName": "Geivai", 
+"lastName": "joie", 
+"email": "dgeivai@yahoo.fr", 
+"favoriteColor": "grey", 
+"birthday": "02/04/1990"}
+
+###DELETE
+DELETE http://localhost:8080/contacts/63f8d1973f6c6771fb5131b8 HTTP/1.1
+
+
+//Render
+### All
+GET https://cse341-code-student-onrender-com-api-docs.onrender.com/contacts
+
+### GET
+GET https://cse341-code-student-onrender-com-api-docs.onrender.com/contacts/63f8d1973f6c6771fb5131b8
+
+###Render
+POST https://cse341-code-student-onrender-com-api-docs.onrender.com/contacts 
+Content-Type: application/json
+
+{"firstName": "Mouna", 
+"lastName": "Badelo", 
+"email": "badelo@gmail.com", 
+"favoriteColor": "orange", 
+"birthday": "04/11/1963"}
+###Render 
+PUT https://cse341-code-student-onrender-com-api-docs.onrender.com/contacts/63f8d3313f6c6771fb5131b9
+Content-Type: application/json
+
+{"firstName": "Okue", 
+"lastName": "Agnou",
+"email": "boto@yahoo.fr", 
+"favoriteColor": "yellow",
+"birthday": "03/05/1995"}
+###
+ Render
+DELETE http://localhost:8080/contacts/63f8d3313f6c6771fb5131b9 HTTP/1.1
+
+
